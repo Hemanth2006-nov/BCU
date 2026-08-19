@@ -1,0 +1,118 @@
+:root {
+    --bcu-navy: #0f2c59;
+    --bcu-gold: #d4af37;
+    --bcu-gold-dark: #b8860b;
+}
+
+.bg-navy { background-color: var(--bcu-navy) !important; }
+.text-navy { color: var(--bcu-navy) !important; }
+.text-gold { color: var(--bcu-gold) !important; }
+.text-gold-dark { color: var(--bcu-gold-dark) !important; }
+
+/* Marquee Bar */
+.marquee-bar {
+    background-color: #0a1e3f;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: marquee 22s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* Header Emblem */
+.bcu-logo-box {
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--bcu-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8;
+}
+
+.btn-navy {
+    background-color: var(--bcu-navy);
+    color: #ffffff;
+    border: none;
+}
+.btn-navy:hover {
+    background-color: #0a1e3f;
+    color: #ffffff;
+}
+
+.btn-outline-navy {
+    color: var(--bcu-navy);
+    border: 1.5px solid var(--bcu-navy);
+}
+.btn-outline-navy:hover {
+    background-color: var(--bcu-navy);
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--bcu-gold) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Vertical Floating Social Bar (Right side of banner) */
+.side-social-bar {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+.social-icon:hover { transform: scale(1.1); color: white; }
+.whatsapp { background-color: #25D366; }
+.facebook { background-color: #1877F2; }
+.linkedin { background-color: #0A66C2; }
+.youtube  { background-color: #FF0000; }
+
+/* Banner Slide Images */
+.slide-1 {
+    background: linear-gradient(rgba(15, 44, 89, 0.75), rgba(15, 44, 89, 0.75)), 
+                url('https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    min-height: 380px;
+}
+.slide-2 {
+    background: linear-gradient(rgba(15, 44, 89, 0.75), rgba(15, 44, 89, 0.75)), 
+                url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    min-height: 380px;
+}
+
+.bcu-divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--bcu-gold);
+}
